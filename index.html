@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>LET'S PLAY</title>
+  <script src="js/myFunctions.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <h1>rock - paper - scissors</h1>
+
+  <div>
+    <button id="btn1" onclick="hacerJugada(1)"><i class="fa-solid fa-hand-back-fist"></i></button>
+    <button id="btn2" onclick="hacerJugada(2)"><i class="fa-solid fa-hand"></i></button>
+    <button id="btn3" onclick="hacerJugada(3)"><i class="fa-solid fa-hand-scissors"></i></button>
+  </div>
+
+  <div id="salida">
+    <table>
+      <tr>
+        <td>YOU</td>
+        <td>DRAW</td>
+        <td>PC</td>
+      </tr>
+      <tr>
+        <td id="j1">0</td>
+        <td id="em">0</td>
+        <td id="j2">0</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="contenedor-flex">
+    <p id="jugadaPlayer"></p>
+    <p id="jugadaVs"></p>
+    <p id="jugadaPc"></p>
+  </div>
+
+</body>
+
+</html>
